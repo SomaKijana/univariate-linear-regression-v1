@@ -6,7 +6,7 @@ def split_into_training_and_testing_sets(data_array):
     dim = data_array.ndim
     if dim != 2:
         raise ValueError(
-            "Argument data_array must be two dimensional. Got {0} dimensional array instead!".format(dim))
+            "Argument data_array must be 2 dimensional. Got {0} dimensional array instead!".format(dim))
     num_rows = data_array.shape[0]
     if num_rows < 2:
         raise ValueError(
@@ -19,7 +19,7 @@ def split_into_training_and_testing_sets(data_array):
 def model_test(testing_set, slope, intercept):
     dim = testing_set.ndim
     if dim != 2:
-        raise ValueError("Argument testing_set must be two dimensional. Got {0} dimensional array instead!".format(
+        raise ValueError("Argument testing_set must be 2 dimensional. Got {0} dimensional array instead!".format(
             dim
         )
         )
@@ -38,7 +38,7 @@ def model_test(testing_set, slope, intercept):
 def train_model(training_set):
     dim = training_set.ndim
     if dim != 2:
-        raise ValueError("Argument training_set must be two dimensional. Got {0} dimensional array instead!".format(
+        raise ValueError("Argument training_set must be 2 dimensional. Got {0} dimensional array instead!".format(
             dim
         )
         )
