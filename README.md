@@ -2,7 +2,7 @@
 
 This repository holds the code for the DataCamp course [Unit Testing for Data Science in Python by Dibya Chakravorty](https://www.datacamp.com/courses/unit-testing-for-data-science-in-python).
 
-Setup the project using
+Setup the project using:
 
 ```
 pip install -e .

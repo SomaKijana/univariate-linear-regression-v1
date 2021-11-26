@@ -34,7 +34,7 @@ class TestSplitIntoTrainingAndTestingSets(object):
         test_argument = np.array([1382.0, 390167.0])
         with pytest.raises(ValueError) as exc_info:
             split_into_training_and_testing_sets(test_argument)
-        expected_error_msg = "Argument data_array must be two dimensional. Got 1 dimensional array instead!"
+        expected_error_msg = "Argument data_array must be 2 dimensional. Got 1 dimensional array instead!"
         assert exc_info.match(expected_error_msg)
 
 
@@ -99,5 +99,5 @@ class TestModelTest(object):
         test_argument = np.array([1.0, 2.0, 3.0, 4.0])
         with pytest.raises(ValueError) as exc_info:
             model_test(test_argument, 1.0, 1.0)
-        expected_error_msg = "Argument testing_set must be two dimensional. Got 1 dimensional array instead!"
+        expected_error_msg = "Argument testing_set must be 2 dimensional. Got 1 dimensional array instead!"
         assert exc_info.match(expected_error_msg)
